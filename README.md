@@ -1,8 +1,10 @@
 # Rainbow-Table
 A Haskell program that generates a rainbow table to crack a password based on a given hash value.
 
+## Setup
+
 ## Demo
-*Main> :t rainbowTable
+*Main> :t rainbowTable <br>
 *Main> rainbowTable 0 ["abcdeabc"]
 fromList [(1726491528,"abcdeabc")]
 *Main> rainbowTable 40 ["abcdeabc", "aabbccdd", "eeeeeeee"]
