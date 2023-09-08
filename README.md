@@ -2,13 +2,13 @@
 A Haskell program that generates a rainbow table to crack a password based on a given hash value.
 
 ## Files
-- rainbow.hs <br>
-- RainbowAssign.hs <br>
+- RainbowAssign.hs: a module used in rainbow.hs which contains functions for hashing passwords, building, reading and writing tables. <br>
+- rainbow.hs: the main module which contains functions for reducing hashes, creating the table, reversing the hashes and testing the table's functionality. <br>
 
 ## Setup
-1. Install the Glasgow Haskell Compiler (GHC) </br>
-2. Open command prompt and navigate to the src folder </br>
-3. Type 'ghci' in the command prompt to start it </br>
+1. Install the Glasgow Haskell Compiler (GHC) <br>
+2. Open command prompt and navigate to the src folder <br>
+3. Type 'ghci' in the command prompt to start it <br>
 4. Type ':l rainbow.hs' to load the Haskell source file
 
 ## Demo
