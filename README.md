@@ -15,6 +15,7 @@ fromList [(1726491528,"abcdeabc")]
 fromList [(-1993856529,"abcdeabc"),(1781092264,"aabbccdd"),(2135711886,"eeeeeeee")] 
 ```
 
+
 Creating a rainbow table and writing the results to a file 
 ```
 *Main> buildTable rainbowTable nLetters pwLength width height 
