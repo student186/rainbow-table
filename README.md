@@ -21,7 +21,7 @@ Creating a rainbow table and writing the results to a file
 fromList [(-2146640490,"aaebebca"),(-2143707111,"dadacbac"),(-2140068575,"daccadab"),(-2137272861,"beaadeec"),...
 *Main> generateTable
 ```
-
+<br/>
 Testing the findPassword function
 ```
 *Main> let table = rainbowTable 40 ["abcdeabc", "aabbccdd", "eeeeeeee"]
