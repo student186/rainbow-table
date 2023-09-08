@@ -14,14 +14,14 @@ fromList [(1726491528,"abcdeabc")]
 *Main> rainbowTable 40 ["abcdeabc", "aabbccdd", "eeeeeeee"] 
 fromList [(-1993856529,"abcdeabc"),(1781092264,"aabbccdd"),(2135711886,"eeeeeeee")] 
 ```
-<br/>
+\
 Creating a rainbow table and writing the results to a file 
 ```
 *Main> buildTable rainbowTable nLetters pwLength width height 
 fromList [(-2146640490,"aaebebca"),(-2143707111,"dadacbac"),(-2140068575,"daccadab"),(-2137272861,"beaadeec"),...
 *Main> generateTable
 ```
-<br/>
+\
 Testing the findPassword function
 ```
 *Main> let table = rainbowTable 40 ["abcdeabc", "aabbccdd", "eeeeeeee"]
