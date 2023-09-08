@@ -2,7 +2,10 @@
 A Haskell program that generates a rainbow table to crack a password based on a given hash value.
 
 ## Setup
-
+1. Install the Glasgow Haskell Compiler (GHC) </br>
+2. Open command prompt and navigate to the src folder </br>
+3. Type 'ghci' in the command prompt to start it </br>
+4. Type ':l rainbow.hs' to load the Haskell source file
 ## Demo
 
 Testing the rainbowTable function:
