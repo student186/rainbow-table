@@ -7,16 +7,26 @@ A Haskell program that generates a rainbow table to crack a password based on a 
 
 Testing the rainbowTable function
 ```
-*Main> :t rainbowTable <br>
-rainbowTable :: Int -> [Passwd] -> Map.Map Hash Passwd <br>
-*Main> rainbowTable 0 ["abcdeabc"] <br>
-fromList [(1726491528,"abcdeabc")] <br>
-*Main> rainbowTable 40 ["abcdeabc", "aabbccdd", "eeeeeeee"] <br>
-fromList [(-1993856529,"abcdeabc"),(1781092264,"aabbccdd"),(2135711886,"eeeeeeee")] <br>
+*Main> :t rainbowTable 
+rainbowTable :: Int -> [Passwd] -> Map.Map Hash Passwd 
+*Main> rainbowTable 0 ["abcdeabc"] 
+fromList [(1726491528,"abcdeabc")] 
+*Main> rainbowTable 40 ["abcdeabc", "aabbccdd", "eeeeeeee"] 
+fromList [(-1993856529,"abcdeabc"),(1781092264,"aabbccdd"),(2135711886,"eeeeeeee")] 
 ```
 
-Creating a rainbow table
+Creating a rainbow table and writing the results to a file 
 ```
-*Main> buildTable rainbowTable nLetters pwLength width height <br>
-fromList [(-2146640490,"aaebebca"),(-2143707111,"dadacbac"),(-2140068575,"daccadab"),(-2137272861,"beaadeec"),... <br>
+*Main> buildTable rainbowTable nLetters pwLength width height 
+fromList [(-2146640490,"aaebebca"),(-2143707111,"dadacbac"),(-2140068575,"daccadab"),(-2137272861,"beaadeec"),...
+*Main> generateTable
+```
+
+Testing the findPassword function
+```
+*Main> let table = rainbowTable 40 ["abcdeabc", "aabbccdd", "eeeeeeee"]
+*Main> findPassword table 40 1726491528
+Just "abcdeabc"
+*Main> findPassword table 40 1726491529
+Nothing
 ```
