@@ -22,7 +22,7 @@ fromList [(1726491528,"abcdeabc")]
 fromList [(-1993856529,"abcdeabc"),(1781092264,"aabbccdd"),(2135711886,"eeeeeeee")] 
 ```
 \
-Creating a rainbow table and writing the results to a file: 
+Creating a rainbow table based on random initial passwords and writing the results to a file: 
 ```
 *Main> buildTable rainbowTable nLetters pwLength width height 
 fromList [(-2146640490,"aaebebca"),(-2143707111,"dadacbac"),(-2140068575,"daccadab"),(-2137272861,"beaadeec"),...
