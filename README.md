@@ -2,7 +2,7 @@
 A Haskell program that generates a rainbow table to crack a password based on a given hash value.
 
 ## Files
-- RainbowAssign.hs: A module used in rainbow.hs which contains functions for hashing passwords, building, reading and writing tables. <br>
+- RainbowAssign.hs: A module used in rainbow.hs which contains functions for hashing passwords, building, reading and writing tables. (this module is provided by the instructor) <br>
 - rainbow.hs: The main module which contains functions for reducing hashes, creating the table, reversing the hashes and testing the table's functionality. <br>
 
 ## Setup
